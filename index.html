@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para mi amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Delius&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="experience" aria-live="polite">
+    <section class="intro-screen" id="introScreen">
+      <button class="envelope" id="openEnvelope" type="button" aria-label="Abrir carta">
+        <span class="envelope__flap"></span>
+        <span class="envelope__body">
+          <span class="envelope__heart">❤</span>
+        </span>
+      </button>
+      <p class="intro-hint">tocá el corazón</p>
+    </section>
+
+    <section class="love-screen" id="loveScreen" aria-hidden="true">
+      <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+      <div class="mouse-glow" id="mouseGlow" aria-hidden="true"></div>
+
+      <div class="letter-panel">
+        <h1>Ya tenia ganas de hacer estas cosas por vos &lt;3</h1>
+        <p class="main-note">
+          Esta paginita es para recordarte que incluso cuando nos equivocamos
+          siempre elegimos hablar, aprender y cuidarnos mejor.
+        </p>
+      </div>
+
+      <div class="progress">
+        <span id="openedCount">0</span> de <span id="totalCount">4</span> cartitas abiertas
+      </div>
+
+      <div class="card-grid" id="cardGrid">
+        <button class="locked-card" type="button">
+          <span class="lock">♡</span>
+          <span class="locked-text">Abrir cartita</span>
+          <span class="message">Te extrañe mucho amor mio</span>
+        </button>
+        <button class="locked-card" type="button">
+          <span class="lock">♡</span>
+          <span class="locked-text">Abrir cartita</span>
+          <span class="message">Posta que esos dias sin vos me pesaron y mucho</span>
+        </button>
+        <button class="locked-card" type="button">
+          <span class="lock">♡</span>
+          <span class="locked-text">Abrir cartita</span>
+          <span class="message">Me alegro que hayamos podido aclarar y arreglar nuestras cosas</span>
+        </button>
+        <button class="locked-card" type="button">
+          <span class="lock">♡</span>
+          <span class="locked-text">Abrir cartita</span>
+          <span class="message">No te quiero lejos de mi nunca mas</span>
+        </button>
+      </div>
+
+      <div class="love-word" id="loveWord" aria-label="te amo">
+        <span>t</span>
+        <span>e</span>
+        <span>a</span>
+        <span>m</span>
+        <span>o</span>
+        <span>🩷</span>
+      </div>
+
+      <button class="play-button" id="playButton" type="button">queres jugar lol?</button>
+
+      <aside class="distance-map" aria-label="De Argentina a Paraguay">
+        <span class="flag-denied" aria-label="Bolivia no">
+          <span>🇧🇴</span>
+          <span class="flag-x">❌</span>
+        </span>
+        <span class="place">🇦🇷 yo</span>
+        <span class="route">♡ · ✦ · ♡</span>
+        <span class="place">vos 🇵🇾</span>
+      </aside>
+    </section>
+
+    <section class="lol-screen" id="lolScreen" aria-hidden="true">
+      <div class="mouse-glow" aria-hidden="true"></div>
+      <div class="lol-content">
+        <p class="lol-copy">Dale amor, aunque no me canso de ver tu perfil uf</p>
+        <button class="profile-button" id="profileButton" type="button">ver perfil</button>
+        <figure class="profile-frame" id="profileFrame" aria-hidden="true">
+          <img src="perfilLol.png" alt="Perfil de League of Legends" id="profileImage">
+          <figcaption>mi perfil favorito para mirar</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="image-modal" id="imageModal" aria-hidden="true" role="dialog" aria-label="Perfil ampliado">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Cerrar imagen">×</button>
+    <div class="modal-card">
+      <img src="perfilLol.png" alt="Perfil de League of Legends ampliado">
+      <p>te amo, y nunca me voy a cansar de hacerte estas cosas &lt;3</p>
+    </div>
+  </div>
+
+  <div class="emoji-layer" id="emojiLayer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
